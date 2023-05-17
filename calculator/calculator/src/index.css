@@ -1,0 +1,134 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expression {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.display {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.operator {
+  color: #fff;
+  background-color: #ff8c00;
+}
+
+.btn.zero {
+  grid-column: span 2;
+}
+
+.btn.equals {
+  color: #fff;
+  background-color: #00bfff;
+}
+
+.btn:hover {
+  background-color: #e6e6e6;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+#clear {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+@media screen and (max-width: 480px) {
+  .calculator {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .display {
+    font-size: 32px;
+    padding: 8px;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+#row1 {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#row2 {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#row3 {
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#row4 {
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#row5 {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+}
